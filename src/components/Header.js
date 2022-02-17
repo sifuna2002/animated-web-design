@@ -4,7 +4,7 @@ function Header() {
   return (
     <Container>
         <Logo>
-            <img src="logo192.png"/>
+            <img src="logo192.png" alt="log"/>
             <span>wearme</span>
         </Logo>
         <ul>
