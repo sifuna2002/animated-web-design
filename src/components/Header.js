@@ -9,19 +9,19 @@ function Header() {
         </Logo>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <a href="/#">Home</a>
           </li>
           <li>
-            <a href="#">Features</a>
+            <a href="/#">Features</a>
           </li>
           <li>
-            <a href="#">Fitness</a>
+            <a href="/#">Fitness</a>
           </li>
           <li>
-            <a href="#">Connectivity</a>
+            <a href="/#">Connectivity</a>
           </li>
           <li>
-            <a href="#">Support</a>
+            <a href="/#">Support</a>
           </li>
         </ul>
     </Container>
@@ -52,7 +52,7 @@ const Container=styled.div`
 const Logo=styled.div`
   display: flex;
   align-items:center;
-  padding-left: 50px;
+  padding-left: 18px;
   font-size: 26px;
   font-weight: 600;
   color:#fff;
