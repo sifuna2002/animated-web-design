@@ -73,7 +73,7 @@ const Container=styled.div`
         font-weight: 600;
     }
     p{
-        max-width: 400px;
+        max-width: 300px;
         line-height: 28px;
     }
     }
