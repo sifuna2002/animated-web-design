@@ -5,10 +5,8 @@ import Content from './components/Content'
 function App() {
   return (
       <Container>
-        <Wrapper>
         <Header />
         <Content />
-        </Wrapper>
       </Container>
   );
 }
@@ -19,11 +17,16 @@ const Container=styled.div`
   margin:0;
   padding:0;
   box-sizing:border-box;
-`
-const Wrapper=styled.div`
   margin:0;
   padding:0;
   width:100%;
-  height:100vh;
-  
+  min-height:100vh;
+  background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)), url(back.png);
+    background-position: center;
+    background-size: cover;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    overflow: hidden;
+    background-repeat: no-repeat;
 `
