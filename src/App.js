@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import img from './img/back.png'
 import Header from './components/Header'
 import Content from './components/Content'
 function App() {
