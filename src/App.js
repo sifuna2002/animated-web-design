@@ -26,8 +26,5 @@ const Wrapper=styled.div`
   padding:0;
   width:100%;
   height:100vh;
-  background-image:linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url(${img});
-  background-position:center;
-  background-size: cover;
-  transition: all .5s;;
+  
 `
