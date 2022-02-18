@@ -65,4 +65,16 @@ const Container=styled.div`
     div{
         animation-delay: 3s;
     }
+    @media screen and (max-width: 960px) {
+        
+        h1{
+        font-size:100px;
+        line-height: 90px;
+        font-weight: 600;
+    }
+    p{
+        max-width: 400px;
+        line-height: 28px;
+    }
+    }
 `
