@@ -48,14 +48,7 @@ function Header() {
               Contact Us
             </a>
           </li>
-          <li>
-            <a href="/#"
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-              Sign Up
-            </a>
-          </li>
+          
         </ul>
         {/* <Button /> */}
       </nav>

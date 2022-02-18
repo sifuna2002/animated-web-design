@@ -15,6 +15,7 @@ function Content() {
 
 export default Content
 const Container=styled.div`
+    width: 100%;
     margin-top: 9%;
     margin-left: 9%;
     color: #fff;
