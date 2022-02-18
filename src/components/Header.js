@@ -1,64 +1,67 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react';
+import { Button } from './Button';
+import './Header.css';
+
+
 function Header() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   return (
-    <Container>
-        <Logo>
-            <img src="logo192.png" alt="log"/>
-            <span>wearme</span>
-        </Logo>
-        <ul>
-          <li>
-            <a href="/#">Home</a>
+    <>
+    
+      <nav className='navbar'>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <a href="/#" className='nav-links' onClick={closeMobileMenu}>
+              Home
+            </a>
+          </li>
+          <li
+            className='nav-item'
+
+          >
+            <a href="/#"
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Services <i className='fas fa-caret-down' />
+            </a>
+          </li>
+          <li className='nav-item'>
+            <a href="/#"
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Products
+            </a>
+          </li>
+          <li className='nav-item'>
+            <a href="/#"
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Contact Us
+            </a>
           </li>
           <li>
-            <a href="/#">Features</a>
-          </li>
-          <li>
-            <a href="/#">Fitness</a>
-          </li>
-          <li>
-            <a href="/#">Connectivity</a>
-          </li>
-          <li>
-            <a href="/#">Support</a>
+            <a href="/#"
+              className='nav-links-mobile'
+              onClick={closeMobileMenu}
+            >
+              Sign Up
+            </a>
           </li>
         </ul>
-    </Container>
-  )
+        {/* <Button /> */}
+      </nav>
+      
+    </>
+  );
 }
 
-export default Header
-const Container=styled.div`
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  ul,li{
-    display:inline-block;
-    list-style:none;
-    margin:10px 20px;
-  }
-  a{
-    text-decoration: none;
-    color:#fff;
-    font-weight: 500;
-  }
-  a:hover{
-    color:#333;
-  }
-  
-`
-const Logo=styled.div`
-  display: flex;
-  align-items:center;
-  padding-left: 18px;
-  font-size: 26px;
-  font-weight: 600;
-  color:#fff;
-  img{
-    width: 60px;
-    margin-right: 10px;
-  }
-  
-`
+export default Header;

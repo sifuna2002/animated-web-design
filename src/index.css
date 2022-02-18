@@ -10,7 +10,7 @@ body {
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     overflow: hidden;
-    ;
+    background-repeat: no-repeat;
 }
 
 code {
